@@ -1,0 +1,16 @@
+// Colors
+$color-background: #ffffff;
+$color-accents: #000000;
+$color-bg-blue: #5555ff;
+$color-bg-pink: #dd77dd;
+$gradient-background: linear-gradient(180deg, $color-bg-blue 0%, $color-bg-pink 100%);
+$color-font-black: #000000;
+$color-font-white: #ffffff;
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Sanchez&display=swap');
+
+$font-header: 'Sora', sans-serif;
+$font-subheader: 'Sanchez', serif;
+$font-body: 'Roboto', sans-serif;
