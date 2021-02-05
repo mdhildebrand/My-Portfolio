@@ -3,11 +3,13 @@ import { projects } from '../data/projects';
 
 const ProjectList = () => {
 
+    const projectList = Object.values(projects)
+
     return (
         <section id="projects-section">
-            {projects.map((project) => {
+            {projectList.map((project) => {
                 return (
-                    <div className="project-div">
+                    <div className="project-div" key={project.id}>
                         <img src={project.screenshotURL} alt="Screenshot of the project" />
                         <h2>{project.project}</h2>
                         <p>{project.landingDescription}</p>

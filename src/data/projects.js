@@ -1,37 +1,71 @@
-export const projects = [
-    {
+export const projects = {
+    "capstone": {
         id: "capstone",
         project: "Capstone Project",
         screenshotURL: "#0",
+        briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        description: "Hello I'm going to be a description!",
         liveSite: "#0",
+        github: "#0",
+        skills: ["skillone", "skilltwo", "skillthree"],
+        tools: ["toolone", "tooltwo", "toolthree"],
+        process: "Hello",
+        processImage: "#0",
+        codeSnippet: "Hello",
+        snippetImage: "#0",
+        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
     },
-    {
+    "portfolio": {
         id: "portfolio",
         project: "Portfolio Project",
         screenshotURL: "#0",
+        briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        description: "Hello I'm going to be a description!",
         liveSite: "#0",
+        github: "#0",
+        skills: ["skillone", "skilltwo", "skillthree"],
+        tools: ["toolone", "tooltwo", "toolthree"],
+        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
     },
-    {
+    "watcher": {
         id: "watcher",
         project: "Watcher - Movie Database",
         screenshotURL: "#0",
+        briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        description: "Hello I'm going to be a description!",
         liveSite: "#0",
+        github: "#0",
+        skills: ["skillone", "skilltwo", "skillthree"],
+        tools: ["toolone", "tooltwo", "toolthree"],
+        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
     },
-    {
+    "tuxedocat": {
         id: "tuxedocat",
         project: "Tuxedo Cat - Business Site",
         screenshotURL: "#0",
+        briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        description: "Hello I'm going to be a description!",
         liveSite: "#0",
+        github: "#0",
+        skills: ["skillone", "skilltwo", "skillthree"],
+        tools: ["toolone", "tooltwo", "toolthree"],
+        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
     },
-    {
+    "boxclicker": {
         id: "boxclicker",
         project: "Box Clicker - JS Game",
         screenshotURL: "#0",
+        briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        description: "Hello I'm going to be a description!",
         liveSite: "#0",
+        github: "#0",
+        skills: ["skillone", "skilltwo", "skillthree"],
+        tools: ["toolone", "tooltwo", "toolthree"],
+        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
     },
-]
+}
