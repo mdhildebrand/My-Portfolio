@@ -3,9 +3,9 @@
 
 // Import variables
 @import './base/variables';
+@import './base/typography';
 
 // Import components
-//@import './components/header';
-//@import './components/nav';
-//@import './components/body';
+@import './components/nav';
+@import './components/body';
 //@import './components/footer';

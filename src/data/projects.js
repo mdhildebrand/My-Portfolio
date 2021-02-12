@@ -31,7 +31,7 @@ export const projects = {
     },
     "watcher": {
         id: "watcher",
-        project: "Watcher - Movie Database",
+        project: "Watcher Movie Database",
         screenshotURL: "#0",
         briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
@@ -44,7 +44,7 @@ export const projects = {
     },
     "tuxedocat": {
         id: "tuxedocat",
-        project: "Tuxedo Cat - Business Site",
+        project: "Tuxedo Cat",
         screenshotURL: "#0",
         briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
@@ -57,7 +57,7 @@ export const projects = {
     },
     "boxclicker": {
         id: "boxclicker",
-        project: "Box Clicker - JS Game",
+        project: "Box Clicker",
         screenshotURL: "#0",
         briefDescription: "A project",
         landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",

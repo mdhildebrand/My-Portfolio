@@ -21,7 +21,7 @@ const Home = () => {
                     <img src="#0" alt="image to go here" />
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
-                        <p>{about[0].aboutText}</p>
+                        <p>{about[0].aboutText.split('\n').map(str => <p>{str}</p>)}</p>
                     </article>
                 </section>
                 <Contact />
