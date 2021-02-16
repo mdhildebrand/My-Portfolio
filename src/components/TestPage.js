@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import SineWave from '../utilities/sinewave';
 
 const TestPage = () => {

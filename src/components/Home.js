@@ -1,13 +1,34 @@
+import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
+import SineWave from '../utilities/sinewave';
 
-const Home = () => {
+const Home = () => {    
+
+    const [scrollHeight, setScrollHeight] = useState(window.pageYOffset)
+
+    useEffect(() => {
+        function backgroundScroll() {            
+            setScrollHeight(window.pageYOffset / 2)
+
+        }
+        window.addEventListener("scroll", backgroundScroll);
+        return () => {
+            window.removeEventListener("scroll", backgroundScroll);
+        };
+    })
+
+
+
+    
 
     return (
         <main>
+            <div id="background" style={{top: scrollHeight}} />
             <Nav />
+            <SineWave />
             <div id="landing-wrapper">
                 <section id="welcome-section">
                     <img src="#0" alt="image to go here" />
