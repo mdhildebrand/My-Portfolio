@@ -43,6 +43,7 @@ svg {
 
 #about-section {
     padding-top: 100px;
+    height: 100vh;
 }
 
 #test-page {
@@ -51,13 +52,32 @@ svg {
     width: 100vw;
 }
 
-#background-wave {
+#wave-container {
     position: absolute;
-    z-index: 0;
-    top: 0;
     height: 100%;
-    width: 1440px;
-    left: -20px;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+
+    #background-wave {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        height: 100%;
+        width: 800px;
+        left: -50px;
+    }
+
+    #background-fill {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 300px;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
+
 }
 
 /*#sine-wave {

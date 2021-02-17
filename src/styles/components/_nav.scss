@@ -5,20 +5,51 @@
     transform: translateY(-50%);
     margin-left: 1rem;
 
-    ul{
+    ul {
         padding: 0;
+
+        a {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
         
         li {
-            border: 3px solid white;
+            border: 0.2rem solid white;
             width: 2rem;
             height: 2rem;
             border-radius: 1rem;
             list-style-type: none;
+
+            li {
+                position: relative;
+                width: 1.2rem;
+                height: 1.2rem;
+                left: 0.2rem;
+                top: 0.2rem;
+                border-radius: 50%;
+                margin-top: 0.5px;
+                border: none;
+            }
+
+            li.currentPos {
+                background: white;
+            }
+
+            li.nav-link {
+                background: none;
+            }
+
+            li.nav-link:focus, :hover, :active {
+                background: rgba(100,100,100,0.8);
+            }
         }
 
         span {
             border: 2px solid white;
             margin-left: 0.9rem;
+            background: white;
         }
     }
 }
