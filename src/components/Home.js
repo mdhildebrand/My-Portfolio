@@ -3,11 +3,12 @@ import Nav from '../components/Nav';
 import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
-import SineWave from '../utilities/sinewave';
+//import SineWave from '../utilities/sinewave';
+import backgroundWave from '../images/backgroundWave.png';
 
 const Home = () => {    
 
-    const [scrollHeight, setScrollHeight] = useState(window.pageYOffset)
+    /*const [scrollHeight, setScrollHeight] = useState(window.pageYOffset)
 
     useEffect(() => {
         function backgroundScroll() {            
@@ -18,7 +19,7 @@ const Home = () => {
         return () => {
             window.removeEventListener("scroll", backgroundScroll);
         };
-    })
+    })*/
 
 
 
@@ -26,9 +27,13 @@ const Home = () => {
 
     return (
         <main>
-            <div id="background" style={{top: scrollHeight}} />
+            <div id="background" /*style={{top: scrollHeight}}*/ />
+            {/*<div id="wave-container">*/}
+                <img src={backgroundWave}
+                     id="background-wave" />
+            {/*</div>*/}
             <Nav />
-            <SineWave />
+            {/*<SineWave />*/}
             <div id="landing-wrapper">
                 <section id="welcome-section">
                     <img src="#0" alt="image to go here" />

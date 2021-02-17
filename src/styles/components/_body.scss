@@ -3,7 +3,7 @@ main {
         background: $gradient-background;
         z-index: -5;
         width: 100vw;
-        height: 70%;
+        height: 100%;
         position: absolute;
     }
 }
@@ -19,6 +19,11 @@ button {
 svg {
     position: fixed;
     z-index: 1;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
 }
 
 #landing-wrapper {
@@ -46,9 +51,17 @@ svg {
     width: 100vw;
 }
 
-#sine-wave {
+#background-wave {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100%;
+    width: 1440px;
+    left: -20px;
+}
+
+/*#sine-wave {
     overflow: hidden;
-    //max-height: 100vh;
     max-width: 100vw;
     margin-left: 100px;
-}
+}*/

@@ -3,6 +3,7 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    margin-left: 1rem;
 
     ul{
         padding: 0;
@@ -13,12 +14,11 @@
             height: 2rem;
             border-radius: 1rem;
             list-style-type: none;
-            margin-left: 2rem;
         }
 
         span {
             border: 2px solid white;
-            margin-left: 2.9rem;
+            margin-left: 0.9rem;
         }
     }
 }

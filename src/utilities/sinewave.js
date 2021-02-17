@@ -53,7 +53,7 @@ export const SineWave = () => {
     const calculateBottom = useCallback(
         point => {
             const xyPoint = {
-                x: paddingOffset + point,
+                x: paddingOffset + 2 * point,
                 y: (totalPoints * 0.25)
             };
             return ['L', xyPoint.x, xyPoint.y].join(' ');
@@ -73,7 +73,7 @@ export const SineWave = () => {
     const calculateTop = useCallback(
         point => {
             const xyPoint = {
-                x: paddingOffset + origin + totalPoints * 0.25 - (point - totalPoints * 0.75),
+                x: paddingOffset + origin + totalPoints * 0.25 - (2 * point - totalPoints * 0.75),
                 y: 0
             };
             return['L', xyPoint.x, xyPoint.y].join(' ');
@@ -122,7 +122,7 @@ export const SineWave = () => {
     return (
         <div id="sine-wave">
             <svg
-                width={1000}
+                width={2000}
                 height={1000}
             >
                 {path}
