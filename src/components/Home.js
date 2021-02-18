@@ -34,6 +34,23 @@ const Home = () => {
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
                         <p>{about[0].aboutText.split('\n').map(str => <p>{str}</p>)}</p>
+                        <h2>{about[0].skillsHeader}</h2>
+                        <section id="about-skills">
+                            <ul>
+                            {about[0].codeSkills.map((skills) => {
+                                return (
+                                    <li key={skills}>{skills}</li>
+                                );
+                            })}
+                            </ul>
+                            <ul>
+                            {about[0].desSkills.map((skills) => {
+                                return (
+                                    <li key={skills}>{skills}</li>
+                                );
+                            })}
+                            </ul>
+                        </section>
                     </article>
                 </section>
                 <Contact />

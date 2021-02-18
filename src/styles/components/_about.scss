@@ -1,8 +1,26 @@
 #about-section {
-
-    height: 120vh;
+    min-height: 130vh;
 
     img {
         max-width: 60vw;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    #about-skills {
+        display: flex;
+        flex-direction: row;
+
+        ul {
+            margin: 10px 50px 0px 10px;
+            padding: 0px;
+
+
+            li {
+                list-style: none;
+            }
+        }
     }
 }

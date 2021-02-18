@@ -18,11 +18,10 @@ const ProjectInfo = () => {
                     <span></span>
                     <h2>{projectArray.briefDescription}</h2>
                 </section>
-                <section id="skills-and-tools">
-                    <section id="skills-section">
-                        <h4>Skills</h4>
-                        <ul id="skills-list">
-                        {projectArray.skills.map((project) => {
+                <section id="code-and-tools">
+                    <section id="code-section">
+                        <ul id="code-list">
+                        {projectArray.code.map((project) => {
                             return (
                                 <li key={project}>{project}</li>
                             );
@@ -30,7 +29,6 @@ const ProjectInfo = () => {
                         </ul>
                     </section>
                     <section id="tools-section">
-                        <h4>Tools</h4>
                         <ul id="tools-list">
                         {projectArray.tools.map((project) => {
                             return (
