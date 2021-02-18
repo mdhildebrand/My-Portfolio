@@ -64,7 +64,7 @@ const ProjectInfo = () => {
                     <span></span>
                     <p>{projectArray.reflections}</p>
                 </section>
-                <nav id="project-nav">
+                <nav id="project-links">
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
                     <a href={projectArray.github}><button type="button">Github</button></a>
                 </nav>

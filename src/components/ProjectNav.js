@@ -5,7 +5,7 @@ const ProjectNav = () => {
     return (
         <div id="project-nav">
             <ul>
-                <NavLink to={'/'}><li>X</li></NavLink>
+                <NavLink to={'/'}><li><span id="leftSlash"></span><span id="rightSlash"></span></li></NavLink>
                 <li></li>
                 <li></li>
                 <li></li>

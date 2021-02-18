@@ -1,10 +1,16 @@
+import capstoneImage from '../images/comingSoon_desktop.png';
+import portfolioImage from '../images/comingSoon_desktop.png';
+import watcherImage from '../images/watcher_desktop.png';
+import tuxedoCatImage from '../images/tuxedoCat_desktop.png';
+import boxclickerImage from '../images/boxclicker_desktop.png';
+
 export const projects = {
     "capstone": {
         id: "capstone",
-        project: "Capstone Project",
-        screenshotURL: "#0",
-        briefDescription: "A project",
-        landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        project: "Lily Woods Photography",
+        screenshotURL: capstoneImage,
+        briefDescription: "Wedding photographer site built in WordPress",
+        landingDescription: "Lily Woods Photography is a custom wordpress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed in a team of three as a final project.",
         description: "Hello I'm going to be a description!",
         liveSite: "#0",
         github: "#0",
@@ -19,10 +25,9 @@ export const projects = {
     "portfolio": {
         id: "portfolio",
         project: "Portfolio Project",
-        screenshotURL: "#0",
-        briefDescription: "A project",
-        landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
-        description: "Hello I'm going to be a description!",
+        screenshotURL: portfolioImage,
+        briefDescription: "My personal portfolio of work",
+        landingDescription: "This is my personal portfolio site - the one you're on right now! It was developed with React and SASS, to be a responsive and appealing showcase for my work.",
         liveSite: "#0",
         github: "#0",
         skills: ["skillone", "skilltwo", "skillthree"],
@@ -32,11 +37,11 @@ export const projects = {
     "watcher": {
         id: "watcher",
         project: "Watcher Movie Database",
-        screenshotURL: "#0",
-        briefDescription: "A project",
-        landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
+        screenshotURL: watcherImage,
+        briefDescription: "Movie website built with React",
+        landingDescription: "The Watcher movie database was developed in a team of two to integrate a movie database API, allowing for up-to-date movie information. This is where I learned to use React, to make a responsive and modular website design.",
         description: "Hello I'm going to be a description!",
-        liveSite: "#0",
+        liveSite: "http://mhildebrand.bcitwebdeveloper.ca/watcher/",
         github: "#0",
         skills: ["skillone", "skilltwo", "skillthree"],
         tools: ["toolone", "tooltwo", "toolthree"],
@@ -45,11 +50,10 @@ export const projects = {
     "tuxedocat": {
         id: "tuxedocat",
         project: "Tuxedo Cat",
-        screenshotURL: "#0",
-        briefDescription: "A project",
-        landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
-        description: "Hello I'm going to be a description!",
-        liveSite: "#0",
+        screenshotURL: tuxedoCatImage,
+        briefDescription: "Multi-page business site",
+        landingDescription: "Tuxedo Cat is a website for a fictional business that combines cat cafes with cocktail lounges. It was designed in collaboration with a teammate, using HTML, SCSS, and JavaScript, to make a dynamic website.",
+        liveSite: "http://mhildebrand.bcitwebdeveloper.ca/tuxedoCat/index.html",
         github: "#0",
         skills: ["skillone", "skilltwo", "skillthree"],
         tools: ["toolone", "tooltwo", "toolthree"],
@@ -58,11 +62,10 @@ export const projects = {
     "boxclicker": {
         id: "boxclicker",
         project: "Box Clicker",
-        screenshotURL: "#0",
-        briefDescription: "A project",
-        landingDescription: "Hi there's gonna be some project description text here! I wanna write just long enough that it maybe fills up about the right amount of space, but who knows how much that is!",
-        description: "Hello I'm going to be a description!",
-        liveSite: "#0",
+        screenshotURL: boxclickerImage,
+        briefDescription: "Simple JavaScript game",
+        landingDescription: "Box Clicker is my first attempt at learning JavaScript. After being introduced to the fundamentals, I wanted to see if I could create something fun and relatively simple using what I'd learned, and what I could research online.",
+        liveSite: "http://mhildebrand.bcitwebdeveloper.ca/boxclicker/index.html",
         github: "#0",
         skills: ["skillone", "skilltwo", "skillthree"],
         tools: ["toolone", "tooltwo", "toolthree"],

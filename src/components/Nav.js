@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 export const Nav = () => {
 	
     const [scrollPos, setScrollPos] = useState("top");
-    const aboutPos = window.innerHeight * 2;
+    const aboutPos = window.document.body.offsetHeight - (window.innerHeight * 1.8);
 
     useEffect (()=>{
         document.addEventListener("scroll", e => {
@@ -18,7 +18,7 @@ export const Nav = () => {
                 setScrollPos("top")
             }
         })
-    },[])
+    },[document.scrollingElement.scrollTop])
 
     return (
         <nav id="nav-id">

@@ -1,0 +1,28 @@
+#contact-section {
+    height: 44vh;
+
+    ul {
+        padding: 0px;
+
+        li {
+            display: flex;
+            margin: 1rem;
+    
+            a {
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    max-height: 2rem;
+                    margin: 0rem;
+                    margin-right: 0.5rem;
+                }
+
+                p {
+                    line-height: 2rem;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

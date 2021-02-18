@@ -27,14 +27,18 @@ svg {
 }
 
 #landing-wrapper {
-    margin-left: 100px;
+    margin-left: 110px;
     padding: 30px;
     z-index: 10;
 }
 
 #welcome-section {
-    height: 100vh;
-    padding-top: 20vh;
+    height: 110vh;
+    padding-top: 10vh;
+
+    img {
+        width: 60vw;
+    }
 }
 
 #projects-section {
@@ -65,7 +69,7 @@ svg {
         top: 0;
         height: 100%;
         width: 800px;
-        left: -50px;
+        left: -40px;
     }
 
     #background-fill {

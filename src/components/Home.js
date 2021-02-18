@@ -4,6 +4,7 @@ import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
 import backgroundWave from '../images/backgroundWave.png';
+import introImage from '../images/introImage.png';
 
 const Home = () => {
 
@@ -21,7 +22,7 @@ const Home = () => {
             {/*<SineWave />*/}
             <div id="landing-wrapper">
                 <section id="welcome-section">
-                    <img src="#0" alt="image to go here" />
+                    <img src={introImage} alt="illustration of the developer" />
                     <article id="welcome-article">
                         <h1>{about[0].welcome}</h1>
                         <p>{about[0].intro}</p>
@@ -29,7 +30,7 @@ const Home = () => {
                 </section>
                 <ProjectList />
                 <section id="about-section">
-                    <img src="#0" alt="image to go here" />
+                    <img src={introImage} alt="image to go here" />
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
                         <p>{about[0].aboutText.split('\n').map(str => <p>{str}</p>)}</p>
