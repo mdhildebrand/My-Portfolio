@@ -41,26 +41,26 @@ const ProjectInfo = () => {
                 <article id="project-description">
                         <p>{projectArray.description}</p>
                 </article>
-                { projectArray.process &&
+                { projectArray.planning &&
                     <section id="project-process">
-                        <h3>Development Process</h3>
+                        <h3>Planning and Design</h3>
                         <span></span>
-                        <p>{projectArray.process}</p>
-                        <img src={projectArray.processImage} />
+                        <p>{projectArray.planning.split('\n').map(str => <p>{str}</p>)}</p>
+                        <img src={projectArray.planningImage} />
                     </section>
                 }
-                { projectArray.codeSnippet &&
-                    <section id="project-codesnippet">
-                        <h3>Code Snippets</h3>
+                { projectArray.development &&
+                    <section id="project-development">
+                        <h3>Development Process</h3>
                         <span></span>
-                        <p>{projectArray.codeSnippet}</p>
-                        <img src={projectArray.snippetImage} />
+                        <p>{projectArray.development.split('\n').map(str => <p>{str}</p>)}</p>
+                        <img src={projectArray.developmentImage} />
                     </section>
                 }
                 <section id="project-reflections">
                     <h3>Reflections</h3>
                     <span></span>
-                    <p>{projectArray.reflections}</p>
+                    <p>{projectArray.reflections.split('\n').map(str => <p>{str}</p>)}</p>
                 </section>
                 <nav id="project-links">
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
