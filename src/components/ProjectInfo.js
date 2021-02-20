@@ -1,5 +1,6 @@
 import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import ContactButton from '../components/ContactButton';
 import ProjectNav from '../components/ProjectNav';
 
@@ -9,14 +10,14 @@ const ProjectInfo = () => {
     const projectArray = projects[id]
     
     return (
-        <main>
+        <main id="project-info-page">
+            <img src={projectArray.screenshotURL}       id="project-header-img" />
             <div id="project-wrapper">
                 <ProjectNav />
                 <section id="project-intro">
-                    <img src={projectArray.screenshotURL} />
                     <h1>{projectArray.project}</h1>
-                    <span></span>
-                    <h2>{projectArray.briefDescription}</h2>
+                    <div className="underline"></div>
+                    <h4>{projectArray.briefDescription}</h4>
                 </section>
                 <section id="code-and-tools">
                     <section id="code-section">
@@ -66,11 +67,13 @@ const ProjectInfo = () => {
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
                     <a href={projectArray.github}><button type="button">Github</button></a>
                 </nav>
+                <Link to={"#project-info-page"} id="top-link">
+                    <div id="return-to-top">
+                        <p>^</p>
+                    </div>
+                </Link>
+                <ContactButton />
             </div>
-            <div id="return-to-top">
-                <p>^</p>
-            </div>
-            <ContactButton />
         </main>
     )
 }
