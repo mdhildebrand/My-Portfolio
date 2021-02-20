@@ -9,7 +9,7 @@ export const Nav = () => {
     useEffect (()=>{
         document.addEventListener("scroll", e => {
             let scrolled = document.scrollingElement.scrollTop;
-            if (scrolled >= window.innerHeight && scrolled < aboutPos){
+            if (scrolled >= (window.innerHeight * 0.8) && scrolled < aboutPos){
                setScrollPos("middle")
             } else if (scrolled >= (aboutPos)){
                setScrollPos("bottom")

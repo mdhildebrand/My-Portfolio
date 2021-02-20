@@ -1,8 +1,8 @@
 import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import ContactButton from '../components/ContactButton';
 import ProjectNav from '../components/ProjectNav';
+import Contact from '../components/Contact';
 
 const ProjectInfo = () => {
 
@@ -72,8 +72,11 @@ const ProjectInfo = () => {
                         <p>^</p>
                     </div>
                 </Link>
-                <ContactButton />
+                <section id="contact-section">
+                    <button>Contact</button>
+                </section>
             </div>
+            <Contact />
         </main>
     )
 }
