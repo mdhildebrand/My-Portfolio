@@ -55,36 +55,44 @@
 
 #project-nav {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
 
     ul {
         padding: 0;
         
         li {
-            background: $color-bg-blue;
             border-radius: 50%;
             list-style-type: none;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
         }
 
         li:nth-child(1) {
-            width: 3.6rem;
-            height: 3.6rem;
+            width: 42px;
+            height: 42px;
+            position: relative;
         }
 
         li:nth-child(2) {
-            width: 2.6rem;
-            height: 2.6rem;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 8px;
         }
 
         li:nth-child(3) {
-            width: 1.8rem;
-            height: 1.8rem;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            top: 10px;
         }
 
         li:nth-child(4) {
-            width: 0.8rem;
-            height: 0.8rem;
+            width: 12px;
+            height: 12px;
+            position: relative;
+            top: 18px;
         }
 
         span {
@@ -92,31 +100,33 @@
             border: 1px solid white;
             background: white;
             display: inline-block;
-            height: 2.6rem;
+            height: 26px;
             width: 3px;
             border-radius: 1.5px;
-            left: 50%;
             -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-            top: 50%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
 
         #leftSlash {
-            -webkit-transform: translateY(-50%) rotate(45deg);
-            -moz-transform: translateY(-50%) rotate(45deg);
-            -ms-transform: translateY(-50%) rotate(45deg);
-            -o-transform: translateY(-50%) rotate(45deg);
-            transform: translateY(-50%) rotate(45deg);
+            left: 17.5px;
+            top: 16px;
+            -webkit-transform: translateY(-50%) rotate(60deg);
+            -moz-transform: translateY(-50%) rotate(60deg);
+            -ms-transform: translateY(-50%) rotate(60deg);
+            -o-transform: translateY(-50%) rotate(60deg);
+            transform: translateY(-50%) rotate(60deg);
         }
 
         #rightSlash {
-            -webkit-transform: translateY(-50%) rotate(-45deg);
-            -moz-transform: translateY(-50%) rotate(-45deg);
-            -ms-transform: translateY(-50%) rotate(-45deg);
-            -o-transform: translateY(-50%) rotate(-45deg);
-            transform: translateY(-50%) rotate(-45deg);
+            left: 14.5px;
+            top: 28px;
+            -webkit-transform: translateY(-50%) rotate(-60deg);
+            -moz-transform: translateY(-50%) rotate(-60deg);
+            -ms-transform: translateY(-50%) rotate(-60deg);
+            -o-transform: translateY(-50%) rotate(-60deg);
+            transform: translateY(-50%) rotate(-60deg);
         }
     }
 }

@@ -26,7 +26,11 @@ h4 {
     margin: 0px;
 }
 
-p, button {
+p, button, a {
     font-family: $font-body;
     font-size: 1.0rem;
+}
+
+a {
+    color: black;
 }

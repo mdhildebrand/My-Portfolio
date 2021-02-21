@@ -1,13 +1,20 @@
 import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
+import { useState } from 'react';
 import ProjectNav from '../components/ProjectNav';
 import Contact from '../components/Contact';
 
 const ProjectInfo = () => {
 
+    const [ hideContact, setHideContact ] = useState(true);
+
     const { id } = useParams();
     const projectArray = projects[id]
+
+    const contactHide = () => {
+        setHideContact(!hideContact);
+    }
     
     return (
         <main id="project-info-page">
@@ -73,10 +80,18 @@ const ProjectInfo = () => {
                     </div>
                 </Link>
                 <section id="contact-section">
-                    <button>Contact</button>
+                    <button onClick={() => contactHide()}>Contact</button>
                 </section>
             </div>
-            <Contact />
+            { hideContact ? (
+                <div id="contact-hidden">
+                    <Contact />
+                </div>
+            ) : (
+                <div>
+                    <Contact />
+                </div>
+            ) }
         </main>
     )
 }

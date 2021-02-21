@@ -88,11 +88,11 @@
             margin: 10px auto 30px auto;
             display: block;
         }
-
-        #contact-article {
-            border-top: 2px solid black;
-        }
     }
+}
+
+#contact-hidden {
+    display: none;
 }
 
 #project-links {
@@ -107,9 +107,9 @@
 }
 
 #top-link {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
+    position: absolute;
+    bottom: -0.25rem;
+    right: 0px;
     z-index: 100;
 
     #return-to-top {
