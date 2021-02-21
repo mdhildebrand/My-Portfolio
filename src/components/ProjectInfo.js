@@ -1,7 +1,7 @@
 import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProjectNav from '../components/ProjectNav';
 import Contact from '../components/Contact';
 
@@ -15,12 +15,16 @@ const ProjectInfo = () => {
     const contactHide = () => {
         setHideContact(!hideContact);
     }
+
+    useEffect (() => {
+        window.scrollTo(0,0)
+    },[])
     
     return (
         <main id="project-info-page">
             <img src={projectArray.screenshotURL}       id="project-header-img" />
+            <ProjectNav />
             <div id="project-wrapper">
-                <ProjectNav />
                 <section id="project-intro">
                     <h1>{projectArray.project}</h1>
                     <div className="underline"></div>
