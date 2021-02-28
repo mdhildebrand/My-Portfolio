@@ -32,3 +32,16 @@
         border-top: 2px solid black;
     }
 }
+
+@media (min-width: 920px) {
+    #contact-article {
+        width: 700px;
+        margin-left: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 #projects-section {
 
     img {
-        max-width: 70vw;
+        width: 70vw;
+        max-width: 500px;
         position: relative;
         left: -75px;
         box-shadow: 1px 1px 6px 2px #222222;
@@ -140,4 +141,36 @@
         width: 80%;
     }
 
+}
+
+@media(min-width: 920px) {
+
+    #projects-section .project-div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6rem;
+
+        a {
+            margin: 0px 25px;
+        }
+
+        img {
+            object-fit: contain;
+            margin: auto;
+            width: 40vw;
+            left: -35px;
+        }
+    }
+
+    .project-info {
+        margin: auto;
+        margin-left: 0px;
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+    }
 }

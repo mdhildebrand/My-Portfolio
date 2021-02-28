@@ -1,8 +1,12 @@
 #about-section {
     min-height: 130vh;
+    padding-top: 60px;
+    padding-bottom: 40px;
 
     img {
-        max-width: 60vw;
+        width: 60vw;
+        max-width: 400px;
+        align-self: center;
     }
 
     h2 {
@@ -23,4 +27,29 @@
             }
         }
     }
+}
+
+@media (min-width: 920px) {
+
+    #about-article {
+        text-justify: center;
+        margin: auto;
+        margin-left: 10px;
+        padding: 10px;
+        max-width: 400px;
+    }
+
+    #about-section {
+        min-height: 700px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    
+        img {
+            width: 60vw;
+            max-width: 400px;
+            object-fit: contain;
+        }
+    }
+
 }
