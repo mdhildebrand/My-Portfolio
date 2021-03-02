@@ -1,5 +1,5 @@
 import capstoneImage from '../images/comingSoon_desktop.png';
-import portfolioImage from '../images/comingSoon_desktop.png';
+import portfolioImage from '../images/portfolio_desktop.png';
 import portfolioWireframes from '../images/portfolio_wireframes.png';
 import watcherImage from '../images/watcher_desktop.png';
 import watcherMockups from '../images/watcher_mockups.png';
@@ -9,10 +9,11 @@ import tuxedoCatMenu from '../images/tuxedoCat_menu.gif';
 import boxclickerImage from '../images/boxclicker_desktop.png';
 
 export const projects = {
-    "capstone": {
+    /*"capstone": {
         id: "capstone",
         project: "Lily Woods Photography",
         screenshotURL: capstoneImage,
+        headerImg: capstoneImage,
         briefDescription: "Wedding photographer site built in WordPress",
         landingDescription: "Lily Woods Photography is a custom WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed in a team of three as a final project.",
         liveSite: "#0",
@@ -21,11 +22,12 @@ export const projects = {
         tools: ["Indesign", "Photoshop", "Github"],
         description: "Lily Woods Photography is a custom WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed and developed along with two other teammates from the ground up.",
         reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
-    },
+    },*/
     "portfolio": {
         id: "portfolio",
         project: "Portfolio Project",
         screenshotURL: portfolioImage,
+        headerImg: portfolioImage,
         briefDescription: "My personal portfolio of work",
         landingDescription: "This is my personal portfolio site - the one you're on right now! It was developed with React and SASS, to be a responsive and appealing showcase for my work.",
         liveSite: "#0",
@@ -43,6 +45,7 @@ export const projects = {
         id: "watcher",
         project: "Watcher Movie Database",
         screenshotURL: watcherImage,
+        headerImg: watcherImage,
         briefDescription: "Movie website built with React",
         landingDescription: "The Watcher movie database was developed in a team of two to integrate a movie database API, allowing for up-to-date movie information. This is where I learned to use React, to make a responsive and modular website design.",
         liveSite: "http://mhildebrand.bcitwebdeveloper.ca/watcher/",
@@ -59,6 +62,7 @@ export const projects = {
         id: "tuxedocat",
         project: "Tuxedo Cat",
         screenshotURL: tuxedoCatImage,
+        headerImg: tuxedoCatImage,
         briefDescription: "Multi-page business site",
         landingDescription: "Tuxedo Cat is a website for a fictional business that combines cat cafes with cocktail lounges. It was designed in collaboration with a teammate, using HTML, SCSS, and JavaScript, to make a dynamic website.",
         liveSite: "https://mhildebrand.bcitwebdeveloper.ca/tuxedoCat/index.html",
@@ -76,6 +80,7 @@ export const projects = {
         id: "boxclicker",
         project: "Box Clicker",
         screenshotURL: boxclickerImage,
+        headerImg: boxclickerImage,
         briefDescription: "Simple JavaScript game",
         landingDescription: "Box Clicker is my first attempt at working with JavaScript. After being introduced to the fundamentals, I wanted to see if I could create something fun and relatively simple using what I'd learned, and what I could research online.",
         liveSite: "https://mhildebrand.bcitwebdeveloper.ca/boxclicker/index.html",

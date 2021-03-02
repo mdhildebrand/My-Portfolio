@@ -19,6 +19,10 @@
         p {
             margin-bottom: 1.5rem;
         }
+
+        .project-info {
+            max-width: 420px;
+        }
     }
 
     button {
@@ -34,7 +38,8 @@
 
 #project-wrapper {
 
-    margin: 60px;
+    margin: 65px;
+    max-width: 900px;
 
     button {
         cursor: pointer;
@@ -56,6 +61,7 @@
     #code-and-tools {
         display: flex;
         flex-direction: row;
+        margin-top: 10px;
 
         ul {
             margin: 10px 50px 0px 10px;
@@ -135,10 +141,23 @@
 
 #project-info-page {
 
+    .header-link {
+        position: absolute;
+        bottom: 30px;
+        z-index: 100;
+        left: 50%;
+        margin-left: -56px;
+    }
+
     .underline {
         border: 1px solid black;
         height: 2px;
         width: 80%;
+        max-width: 400px;
+    }
+
+    #project-header-div {
+        position: relative;
     }
 
 }
@@ -172,5 +191,54 @@
     .button-container {
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media (min-width: 920px) {
+
+    #project-description p {
+        margin-left: 20px;
+    }
+
+    #project-intro-description,
+    #project-process,
+    #project-development {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+
+        article,
+        img {
+            width: 50%;
+
+            p {
+                max-width: 380px;
+            }
+        }
+
+        img {
+            height: 100%;
+            padding-top: 40px;
+        }
+    }
+
+    #project-reflections {
+        width: 700px;
+        margin: auto;
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1030px) {
+    #project-header-img {
+        display: block;
+        width: 1030px;
+        margin: auto;
+    }
+
+    #project-wrapper {
+        margin: 65px auto;
     }
 }

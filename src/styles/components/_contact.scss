@@ -44,4 +44,15 @@
             justify-content: space-evenly;
         }
     }
+
+    #project-info-page {
+        #contact-article {
+            margin: auto;
+            width: 900px;
+            div {
+                width: 700px;
+                margin: 30px auto;
+            }
+        }
+    }
 }

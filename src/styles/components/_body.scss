@@ -73,7 +73,7 @@ svg {
         top: 0;
         left: 300px;
         height: 100%;
-        width: 100%;
+        width: 80vw;
         background: white;
     }
 
@@ -126,9 +126,11 @@ svg {
 }
 
 @media (min-width: 1150px) {
-    #wave-container #background-wave {
-        left: 0px;
-        width: 70vw;
+
+    #wave-container {
+        width: 900px;
+        left: 50%;
+        margin-left: -600px
     }
 
     #landing-wrapper {

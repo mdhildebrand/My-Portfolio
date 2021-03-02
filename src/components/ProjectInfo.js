@@ -22,7 +22,10 @@ const ProjectInfo = () => {
     
     return (
         <main id="project-info-page">
-            <img src={projectArray.screenshotURL}       id="project-header-img" />
+            <div id="project-header-div">
+                <img src={projectArray.headerImg}       id="project-header-img" />
+                <a href={projectArray.liveSite} class="header-link"><button type="button">Live Site</button></a>
+            </div>
             <ProjectNav />
             <div id="project-wrapper">
                 <section id="project-intro">
@@ -30,42 +33,48 @@ const ProjectInfo = () => {
                     <div className="underline"></div>
                     <h4>{projectArray.briefDescription}</h4>
                 </section>
-                <section id="code-and-tools">
-                    <section id="code-section">
-                        <ul id="code-list">
-                        {projectArray.code.map((project) => {
-                            return (
-                                <li key={project}>{project}</li>
-                            );
-                        })}
-                        </ul>
-                    </section>
-                    <section id="tools-section">
-                        <ul id="tools-list">
-                        {projectArray.tools.map((project) => {
-                            return (
-                                <li key={project}>{project}</li>
-                            );
-                        })}
-                        </ul>
-                    </section>
-                </section>
-                <article id="project-description">
-                        <p>{projectArray.description}</p>
-                </article>
+                <div id="project-intro-description">
+                    <article id="code-and-tools">
+                        <section id="code-section">
+                            <ul id="code-list">
+                            {projectArray.code.map((project) => {
+                                return (
+                                    <li key={project}>{project}</li>
+                                );
+                            })}
+                            </ul>
+                        </section>
+                        <section id="tools-section">
+                            <ul id="tools-list">
+                            {projectArray.tools.map((project) => {
+                                return (
+                                    <li key={project}>{project}</li>
+                                );
+                            })}
+                            </ul>
+                        </section>
+                    </article>
+                    <article id="project-description">
+                            <p>{projectArray.description}</p>
+                    </article>
+                </div>
                 { projectArray.planning &&
                     <section id="project-process">
-                        <h3>Planning and Design</h3>
-                        <span></span>
-                        <p>{projectArray.planning.split('\n').map(str => <p>{str}</p>)}</p>
+                        <article>
+                            <h3>Planning and Design</h3>
+                            <span></span>
+                            <p>{projectArray.planning.split('\n').map(str => <p>{str}</p>)}</p>
+                        </article>
                         <img src={projectArray.planningImage} />
                     </section>
                 }
                 { projectArray.development &&
                     <section id="project-development">
-                        <h3>Development Process</h3>
-                        <span></span>
-                        <p>{projectArray.development.split('\n').map(str => <p>{str}</p>)}</p>
+                        <article>
+                            <h3>Development Process</h3>
+                            <span></span>
+                            <p>{projectArray.development.split('\n').map(str => <p>{str}</p>)}</p>
+                        </article>
                         <img src={projectArray.developmentImage} />
                     </section>
                 }

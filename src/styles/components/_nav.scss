@@ -130,3 +130,15 @@
         }
     }
 }
+
+@media (min-width: 1150px) {
+    #nav-id {
+        margin-left: calc(10vw - 115px + 1rem);
+    }
+}
+
+@media (min-width: 1300px) {
+    #nav-id {
+        margin-left: calc(15px + 1rem);
+    }
+}
