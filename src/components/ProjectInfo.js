@@ -23,8 +23,7 @@ const ProjectInfo = () => {
     return (
         <main id="project-info-page">
             <div id="project-header-div">
-                <img src={projectArray.headerImg}       id="project-header-img" />
-                <a href={projectArray.liveSite} class="header-link"><button type="button">Live Site</button></a>
+                <img src={projectArray.headerImg} id="project-header-img" />
             </div>
             <ProjectNav />
             <div id="project-wrapper">
@@ -58,26 +57,30 @@ const ProjectInfo = () => {
                             <p>{projectArray.description}</p>
                     </article>
                 </div>
-                { projectArray.planning &&
-                    <section id="project-process">
+                <section id="project-process">
+                    { projectArray.planning &&
                         <article>
                             <h3>Planning and Design</h3>
                             <span></span>
                             <p>{projectArray.planning.split('\n').map(str => <p>{str}</p>)}</p>
                         </article>
+                    }
+                    { projectArray.planningImage &&
                         <img src={projectArray.planningImage} />
-                    </section>
-                }
-                { projectArray.development &&
-                    <section id="project-development">
+                    }
+                </section>
+                <section id="project-development">
+                    { projectArray.development &&
                         <article>
                             <h3>Development Process</h3>
                             <span></span>
                             <p>{projectArray.development.split('\n').map(str => <p>{str}</p>)}</p>
                         </article>
+                    }
+                    { projectArray.developmentImage &&
                         <img src={projectArray.developmentImage} />
-                    </section>
-                }
+                    }
+                </section>
                 <section id="project-reflections">
                     <h3>Reflections</h3>
                     <span></span>
