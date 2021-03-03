@@ -208,7 +208,7 @@
         margin-bottom: 40px;
 
         article,
-        img {
+        div {
             width: 50%;
 
             p {
@@ -217,7 +217,8 @@
         }
 
         img {
-            height: 100%;
+            width: 100%;
+            object-fit: contain;
             padding-top: 40px;
         }
     }

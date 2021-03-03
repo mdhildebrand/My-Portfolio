@@ -5,6 +5,7 @@ import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
 import backgroundWave from '../images/backgroundWave.png';
 import introImage from '../images/introImage.png';
+import aboutImage from '../images/aboutImage.png';
 
 const Home = () => {
 
@@ -30,7 +31,7 @@ const Home = () => {
                 </section>
                 <ProjectList />
                 <section id="about-section">
-                    <img src={introImage} alt="image to go here" />
+                    <img src={aboutImage} alt="image to go here" />
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
                         <p>{about[0].aboutText.split('\n').map(str => <p>{str}</p>)}</p>

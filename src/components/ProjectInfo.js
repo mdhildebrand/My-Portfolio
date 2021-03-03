@@ -4,6 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { useState, useEffect } from 'react';
 import ProjectNav from '../components/ProjectNav';
 import Contact from '../components/Contact';
+import { SRLWrapper } from 'simple-react-lightbox';
 
 const ProjectInfo = () => {
 
@@ -66,7 +67,9 @@ const ProjectInfo = () => {
                         </article>
                     }
                     { projectArray.planningImage &&
-                        <img src={projectArray.planningImage} />
+                        <SRLWrapper>
+                            <img src={projectArray.planningImage} />
+                        </SRLWrapper>
                     }
                 </section>
                 <section id="project-development">
@@ -78,7 +81,9 @@ const ProjectInfo = () => {
                         </article>
                     }
                     { projectArray.developmentImage &&
-                        <img src={projectArray.developmentImage} />
+                        <SRLWrapper>
+                            <img src={projectArray.developmentImage} />
+                        </SRLWrapper>
                     }
                 </section>
                 <section id="project-reflections">
