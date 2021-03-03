@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
@@ -7,20 +6,17 @@ import backgroundWave from '../images/backgroundWave.png';
 import introImage from '../images/introImage.png';
 import aboutImage from '../images/aboutImage.png';
 
-const Home = () => {
-
-    
+const Home = () => {    
 
     return (
         <main>
-            <div id="background" /*style={{top: scrollHeight}}*/ />
+            <div id="background" />
             <div id="wave-container">
                 <img src={backgroundWave}
                      id="background-wave" />
                 <div id="background-fill" />
             </div>
             <Nav />
-            {/*<SineWave />*/}
             <div id="landing-wrapper">
                 <section id="welcome-section">
                     <img src={introImage} alt="illustration of the developer" />
@@ -34,7 +30,7 @@ const Home = () => {
                     <img src={aboutImage} alt="image to go here" />
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
-                        <p>{about[0].aboutText.split('\n').map(str => <p>{str}</p>)}</p>
+                        {about[0].aboutText.split('\n').map((str, i) => <p key={i}>{str}</p>)}
                         <h2>{about[0].skillsHeader}</h2>
                         <section id="about-skills">
                             <ul>

@@ -19,13 +19,17 @@ const ProjectNav = () => {
     const [colorFour, setColorFour] = useState(sineColor(3.14))
 
     useEffect (()=>{
-        document.addEventListener("scroll", e => {
+        const setColor = () => {
             setScrollPos(document.scrollingElement.scrollTop)
             setColorOne(sineColor(0))
             setColorTwo(sineColor(1.14))
             setColorThree(sineColor(2))
             setColorFour(sineColor(3.14))
-        })        
+        }
+        document.addEventListener("scroll", setColor)
+        return () => {
+            document.removeEventListener("scroll", setColor)
+        }
     },[document.scrollingElement.scrollTop])
 
     return (

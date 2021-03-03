@@ -63,7 +63,7 @@ const ProjectInfo = () => {
                         <article>
                             <h3>Planning and Design</h3>
                             <span></span>
-                            <p>{projectArray.planning.split('\n').map(str => <p>{str}</p>)}</p>
+                            {projectArray.planning.split('\n').map((str, i) => <p key={i}>{str}</p>)}
                         </article>
                     }
                     { projectArray.planningImage &&
@@ -77,7 +77,7 @@ const ProjectInfo = () => {
                         <article>
                             <h3>Development Process</h3>
                             <span></span>
-                            <p>{projectArray.development.split('\n').map(str => <p>{str}</p>)}</p>
+                            {projectArray.development.split('\n').map((str, i) => <p key={i}>{str}</p>)}
                         </article>
                     }
                     { projectArray.developmentImage &&
@@ -89,7 +89,7 @@ const ProjectInfo = () => {
                 <section id="project-reflections">
                     <h3>Reflections</h3>
                     <span></span>
-                    <p>{projectArray.reflections.split('\n').map(str => <p>{str}</p>)}</p>
+                    {projectArray.reflections.split('\n').map((str, i) => <p key={i}>{str}</p>)}
                 </section>
                 <nav id="project-links">
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>

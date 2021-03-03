@@ -22,27 +22,35 @@
             border-radius: 50%;
             list-style-type: none;
 
-            li {
-                position: relative;
-                width: 20px;
-                height: 20px;
-                left: 3px;
-                top: 3px;
-                border-radius: 50%;
-                border: none;
-            }
-
-            li.currentPos {
-                background: white;
-            }
-
-            li.nav-link {
-                background: none;
-            }
-
             li.nav-link:focus, :hover, :active {
                 background: rgba(100,100,100,0.8);
             }
+        }
+
+        li.currentPos,
+        li.nav-link {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 6px;
+            border-radius: 50%;
+            border: none;
+        }
+
+        li.nav-top {
+            top: 22px;
+        }
+
+        li.nav-middle {
+            top: 72px;
+        }
+
+        li.nav-bottom {
+            top: 122px;
+        }
+
+        li.currentPos {
+            background-color: white;
         }
 
         span {
