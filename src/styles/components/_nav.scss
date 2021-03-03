@@ -35,6 +35,7 @@
             left: 6px;
             border-radius: 50%;
             border: none;
+            pointer-events: none;
         }
 
         li.nav-top {
@@ -42,11 +43,11 @@
         }
 
         li.nav-middle {
-            top: 72px;
+            top: 73px;
         }
 
         li.nav-bottom {
-            top: 122px;
+            top: 124px;
         }
 
         li.currentPos {

@@ -4,12 +4,15 @@ import { HashLink as Link } from 'react-router-hash-link';
 export const Nav = () => {
 	
     const [scrollPos, setScrollPos] = useState("top");
-    const aboutPos = window.document.body.offsetHeight - (window.innerHeight * 1.8);
 
     useEffect (()=>{
         const checkScroll = () => {
+            let projectPos = document.getElementById("welcome-section").clientHeight - 150;
+            let aboutPos = document.getElementById("welcome-section").clientHeight
+                         + document.getElementById("projects-section").clientHeight
+                         - 150;
             let scrolled = document.scrollingElement.scrollTop;
-            if (scrolled >= (window.innerHeight * 0.8) && scrolled < aboutPos){
+            if (scrolled >= projectPos && scrolled < aboutPos){
                setScrollPos("middle")
             } else if (scrolled >= (aboutPos)){
                setScrollPos("bottom")
@@ -26,13 +29,13 @@ export const Nav = () => {
     return (
         <nav id="nav-id">
             <ul>
-                <li><Link to={"#welcome-section"}></Link></li>  
+                <Link to={"#welcome-section"}><li></li></Link>  
                 { scrollPos == "top" ? <li className="currentPos nav-link nav-top"></li> : <li className="nav-link nav-top"></li> }              
                 <span></span>
-                <li><Link to={"#projects-section"}></Link></li>
+                <Link to={"#projects-section"}><li></li></Link>
                 { scrollPos == "middle" ? <li className="currentPos nav-link nav-middle"></li> : <li className="nav-link nav-middle"></li> }
                 <span></span>
-                <li><Link to={"#about-section"}></Link></li>
+                <Link to={"#about-section"}><li></li></Link>
                 { scrollPos == "bottom" ? <li className="currentPos nav-link nav-bottom"></li> : <li className="nav-link nav-bottom"></li> }
             </ul>
         </nav>
