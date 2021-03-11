@@ -1,4 +1,7 @@
-import capstoneImage from '../images/comingSoon_desktop.png';
+import capstoneImage from '../images/lilyWoods_desktop.png';
+import capstoneHeader from '../images/lilyWoods_desktop.png';
+import capstoneWireframes from '../images/capstone_wireframes.png';
+import capstoneMockups from '../images/capstone_mockups.png';
 import portfolioImage from '../images/portfolio_desktop.png';
 import portfolioHeader from '../images/portfolio_header.png';
 import portfolioWireframes from '../images/portfolio_wireframes.png';
@@ -17,20 +20,24 @@ import boxclickerClicking from '../images/boxclicker_clicking.gif';
 import boxclickerCodepen from '../images/boxclicker_codepen.png';
 
 export const projects = {
-    /*"capstone": {
+    "capstone": {
         id: "capstone",
         project: "Lily Woods Photography",
         screenshotURL: capstoneImage,
-        headerImg: capstoneImage,
+        headerImg: capstoneHeader,
         briefDescription: "Wedding photographer site built in WordPress",
         landingDescription: "Lily Woods Photography is a custom WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed in a team of three as a final project.",
-        liveSite: "#0",
-        github: "#0",
+        liveSite: "https://lilywoods.bcitwebdeveloper.ca/",
+        github: "https://github.com/htpwebdesign/lily-woods",
         code: ["WordPress", "PHP", "SASS"],
-        tools: ["Indesign", "Photoshop", "Github"],
-        description: "Lily Woods Photography is a custom WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed and developed along with two other teammates from the ground up.",
-        reflections: "A section at the end with reflections, takeaways, things I would change or do differently, etc.",
-    },*/
+        tools: ["InVision", "Photoshop", "Github"],
+        description: "Lily Woods Photography is a custom WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed and developed from the ground up along with two other teammates.",
+        planning: "We started with a project brief from the fictional client, laying out what they expected from their website. The three of us spent some time brainstorming some ideas, compiling a list of competitive websites, and thinking of questions for the client. We brought these to the discovery meeting, where we went over what they wanted, and based on our discussion we wrote up a memo of understanding to send to them. We also set up a Trello board to keep track of who was working on what.\nFrom there, we began laying out our content plan and our site plan, and gathering the actual content for the site. We used InVision to collaboratively lay out our wireframes, and my teammate began constructing mockups while I prepared much of the media meant to appear on the site.",
+        planningImage: capstoneWireframes,
+        development: "We decided fairly early on that we wanted to rely pretty extensively on advanced custom fields for the layout of most of the pages. My teammates set up the necessary php files to load in our custom fields, and to set up the taxonomies, while I began filling in much of the content appearing on the site, and making sure it was all organized. Once those were set up, I began writing the code to output that content to the intended pages, while my teammates worked on design tweaks and styling the pages.\nFor much of our work, my teammates and I would choose what we were working on, and get to it while checking in regularly, and calling on each other for help as needed. I found this kept development running smoothly, as we were all able to focus on what we had to work on, while also being aware of how the site was progressing as a whole, and being able to have a hand in almost all aspects of the site.\nOne of the last stages was setting up the various plugins used on the site. Since my teammates were still working on styling and other aspects, and I had been responsible for most of the media, I focused on setting up the plugins we used for various gallery functions. I integrated isotope for the gallery layouts, lightgallery for the light box displays used in most of the galleries, and also set up a slick slider for the testimonials page.",
+        developmentImage: capstoneMockups,
+        reflections: "Overall, I'm really happy with how the process of building this site went. I'd worked with one of my teammates before on a few projects, and we carried that rapport into this one. We did a good job of dividing up tasks, and helping each other out as needed. We had also done enough projects by this point that I could really feel the experience and knowledge I'd gained coming to bear, and that was exciting.\nAs I'd found on other projects, having an extensive planning stage was immensely beneficial, and helped us stay focused and keep things going smoothly once we were in the development phase. I also really came to appreciate the usefulness of plugins over the course of this project, and how much useful functionality they can bring to your site with a relatively minimal amount of fuss.",
+    },
     "portfolio": {
         id: "portfolio",
         project: "Portfolio Project",
@@ -38,7 +45,7 @@ export const projects = {
         headerImg: portfolioHeader,
         briefDescription: "My personal portfolio of work",
         landingDescription: "This is my personal portfolio site - the one you're on right now! It was developed with React and SASS, to be a responsive and appealing showcase for my work.",
-        liveSite: "#welcome-section",
+        liveSite: "https://mdhildebrand.com/#welcome-section",
         github: "https://github.com/hildebrandmatt/My-Portfolio",
         code: ["HTML", "SASS", "React"],
         tools: ["Photoshop", "Illustrator", "Adobe XD", "Github"],
@@ -47,7 +54,7 @@ export const projects = {
         planningImage: portfolioWireframes,
         development: "The development process began with establishing the structure in React, using what I'd learned in previous projects to generate an efficiently coded site essentially consisting of two main pages, which would be easily modulated depending on the specific project being viewed. From there, I began laying out the overall styling for the site, attempting to keep a simple layout with a little design flair, which ideally showcases my abilities without detracting too much from the projects being showcased.\nOnce the basic pages were laid out, I began inputting content, setting up the images and blocks of text throughout the site. Once the content was input, I moved into the final stages, finalizing the styling and added a few flairs via the navigation widgets and other details.",
         developmentImage: portfolioNavcode,
-        reflections: "I'll fill this in once I have the distance to reflect from.",
+        reflections: "This was honestly a really enjoyable project to work on. I went into it largely with the intention of getting more practice with using React, and I was pleased to find my skills with it improving, and also to very quickly see how useful React would be for setting up this kind of website. Using components and iterative design made it really easy to enter new information, and will make updating projects a breeze in the future.\nThis project also continued to emphasize how useful it is to plan in advance. I spent more work planning and designing this site before developing than I have any project prior, and it made the workflow much smoother when I got to that point. Looking back on the project, I think the main thing I would change is to take even more time on it, perfecting a few elements and going over accessibility issues. Fortunately, I do have the time, and intend to continue working on this in the near future.",
     },
     "watcher": {
         id: "watcher",
