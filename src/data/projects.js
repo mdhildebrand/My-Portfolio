@@ -1,5 +1,5 @@
 import capstoneImage from '../images/lilyWoods_desktop.png';
-import capstoneHeader from '../images/lilyWoods_desktop.png';
+import capstoneHeader from '../images/capstone_header.png';
 import capstoneWireframes from '../images/capstone_wireframes.png';
 import capstoneMockups from '../images/capstone_mockups.png';
 import portfolioImage from '../images/portfolio_desktop.png';

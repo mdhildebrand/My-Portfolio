@@ -10,11 +10,16 @@ main {
 
 button {
     background: white;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 2rem;
     width: 7rem;
     border-radius: 16px;
     margin: 10px 0px 10px 0px;
+}
+
+button:hover, :focus {
+    background: black;
+    color: white;
 }
 
 svg {
