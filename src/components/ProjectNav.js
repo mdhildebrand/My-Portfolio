@@ -34,7 +34,7 @@ const ProjectNav = () => {
 
     return (
         <div id="project-nav">
-            <ul style={{opacity: (scrollPos * 0.001)}}>
+            <ul>
                 <NavLink to={'/'}>
                     <li style={{left: (Math.sin(scrollPos * 0.007) * 10), background: colorOne}}>
                         <span id="leftSlash"></span>

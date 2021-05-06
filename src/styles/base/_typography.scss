@@ -1,13 +1,13 @@
 h1 {
     font-family: $font-header;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 400;
     margin: 10px 0px 0px 0px;
 }
 
 h2 {
     font-family: $font-header;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin: 10px 0px 10px 0px;
 }
@@ -15,8 +15,7 @@ h2 {
 h3 {
     font-family: $font-subheader;
     font-size: 1.8rem;
-    font-weight: 400;
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 h4 {
@@ -28,7 +27,8 @@ h4 {
 
 p, button, a, li {
     font-family: $font-body;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 a {

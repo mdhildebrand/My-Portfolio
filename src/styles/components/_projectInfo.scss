@@ -1,35 +1,3 @@
-#projects-section {
-
-    img {
-        width: 70vw;
-        max-width: 500px;
-        position: relative;
-        left: -75px;
-        box-shadow: 1px 1px 6px 2px #222222;
-        margin-bottom: 1rem;
-    }
-
-    .project-div {
-        margin-bottom: 4rem;
-
-        a {
-            margin: 1rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        .project-info {
-            max-width: 420px;
-        }
-    }
-
-    button {
-        cursor: pointer;
-    }
-}
-
 #project-header-img {
     position: relative;
     max-width: 100vw;
@@ -38,15 +6,22 @@
 
 #project-wrapper {
 
-    margin: 65px;
-    max-width: 900px;
+    margin: 30px 65px;
+    max-width: 700px;
 
     button {
         cursor: pointer;
     }
 
-    img {
-        max-width: 100%;
+    #project-header-img {
+        width: 100%;
+    }
+
+    div {
+        img {
+            max-width: 100vw;
+            margin-left: -65px;
+        }
     }
 
     #project-intro {
@@ -135,6 +110,7 @@
             margin: auto;
             font-weight: 300;
             margin-top: -5px;
+            line-height: 1.1em;
         }
     }
 }
@@ -152,7 +128,7 @@
     .underline {
         border: 1px solid black;
         height: 2px;
-        width: 80%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -162,84 +138,26 @@
 
 }
 
-@media(min-width: 920px) {
-
-    #projects-section .project-div {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 6rem;
-
-        a {
-            margin: 0px 25px;
-        }
-
-        img {
-            object-fit: contain;
-            margin: auto;
-            width: 40vw;
-            left: -35px;
-        }
-    }
-
-    .project-info {
-        margin: auto;
-        margin-left: 0px;
-        min-width: 300px;
-        max-width: 400px;
-    }
-
-    .button-container {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 920px) {
-
-    #project-description p {
-        margin-left: 20px;
-    }
+@media (min-width: 700px) {
 
     #project-intro-description,
     #project-process,
     #project-development {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 40px;
-
-        article,
         div {
-            width: 50%;
-
-            p {
-                max-width: 380px;
+            img {
+                width: 100%;
+                margin-left: 0px;
+                object-fit: contain;
+                padding-bottom: 40px;
             }
         }
-
-        img {
-            width: 100%;
-            object-fit: contain;
-            padding-top: 40px;
-        }
     }
 
-    #project-reflections {
-        width: 700px;
-        margin: auto;
-        h3 {
-            text-align: center;
-        }
-    }
 }
 
-@media (min-width: 1030px) {
-    #project-header-img {
-        display: block;
-        width: 1030px;
-        margin: auto;
-    }
+@media (min-width: 830px) {
 
     #project-wrapper {
-        margin: 65px auto;
+        margin: 30px auto;
     }
 }

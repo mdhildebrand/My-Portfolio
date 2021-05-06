@@ -23,11 +23,9 @@ const ProjectInfo = () => {
     
     return (
         <main id="project-info-page">
-            <div id="project-header-div">
-                <img src={projectArray.headerImg} id="project-header-img" />
-            </div>
             <ProjectNav />
             <div id="project-wrapper">
+                <img src={projectArray.headerImg} id="project-header-img" />
                 <section id="project-intro">
                     <h1>{projectArray.project}</h1>
                     <div className="underline"></div>
@@ -95,11 +93,11 @@ const ProjectInfo = () => {
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
                     <a href={projectArray.github}><button type="button">Github</button></a>
                 </nav>
-                <Link to={"#project-info-page"} id="top-link">
+                {/*<Link to={"#project-info-page"} id="top-link">
                     <div id="return-to-top">
                         <p>^</p>
                     </div>
-                </Link>
+                </Link>*/}
                 <section id="contact-section">
                     <button onClick={() => contactHide()}>Contact</button>
                 </section>
