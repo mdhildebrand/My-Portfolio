@@ -1,19 +1,21 @@
 #projects-section {
 
     img {
-        width: 70vw;
+        //width: 75vw;
         max-width: 500px;
-        position: relative;
-        left: -75px;
+        //position: relative;
         box-shadow: 1px 1px 6px 2px #222222;
-        margin-bottom: 1rem;
+        margin: 2rem auto;
+        object-fit: scale-down;
+        width: 100%;
+        display: block;
     }
 
     .project-div {
-        margin-bottom: 4rem;
+        margin: 2rem 0;
 
         a {
-            margin: 1rem;
+            margin: 1rem auto;
         }
 
         p {
@@ -21,12 +23,27 @@
         }
 
         .project-info {
+            margin: auto;
+            padding: 0 1rem;
             max-width: 420px;
         }
     }
 
     button {
         cursor: pointer;
+        margin: auto;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media(min-width: 380px) {
+    .button-container{
+        flex-direction: row;
     }
 }
 
@@ -54,10 +71,5 @@
         margin-left: 0px;
         min-width: 300px;
         max-width: 400px;
-    }
-
-    .button-container {
-        display: flex;
-        flex-direction: row;
     }
 }

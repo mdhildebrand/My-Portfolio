@@ -4,7 +4,7 @@
     padding-bottom: 40px;
 
     img {
-        width: 60vw;
+        width: 100%;
         max-width: 400px;
         align-self: center;
     }
@@ -15,6 +15,7 @@
 
     #about-article {
         max-width: 550px;
+        padding: 1rem;
     }
 
     #about-skills {
