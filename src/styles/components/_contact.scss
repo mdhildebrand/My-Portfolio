@@ -1,4 +1,21 @@
+#contact-background {
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+
+}
+
 #contact-article {
+    background-color: white;
+    margin: auto;
+    pointer-events: unset;
+    padding: 30px;
 
     ul {
         padding: 0px;
@@ -30,13 +47,6 @@
     }
 }
 
-#project-info-page {
-    #contact-article {
-        margin: 40px;
-        border-top: 2px solid black;
-    }
-}
-
 #landing-wrapper {
     #contact-article {
         max-width: 500px;
@@ -46,28 +56,20 @@
 
 @media (min-width: 920px) {
 
-    #landing-wrapper #contact-article {
-        max-width: $max-width-desktop;
+    #contact-background {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     #contact-article {
-        width: 700px;
+        width: 800px;
+        margin: auto;
+        padding: 60px;
+        border: solid 3px black;
 
         ul {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-        }
-    }
-
-    #project-info-page {
-        #contact-article {
-            margin: auto;
-            width: 900px;
-            div {
-                width: 700px;
-                margin: 30px auto;
-            }
         }
     }
 }

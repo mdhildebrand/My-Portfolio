@@ -1,24 +1,14 @@
 import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import ProjectNav from '../components/ProjectNav';
 import Contact from '../components/Contact';
 import { SRLWrapper } from 'simple-react-lightbox';
 
-const ProjectInfo = () => {
-
-    const [ hideContact, setHideContact ] = useState(true);
+const ProjectInfo = () => {   
 
     const { id } = useParams();
-    const projectArray = projects[id]
-
-    const contactHide = () => {
-        setHideContact(!hideContact);
-        if(!hideContact) {
-            //window.scrollTo(0, document.body.scrollHeight)
-        }
-    }
+    const projectArray = projects[id] 
 
     useEffect (() => {
         window.scrollTo(0,0)
@@ -26,7 +16,7 @@ const ProjectInfo = () => {
     
     return (
         <main id="project-info-page">
-            <ProjectNav />
+            {/*<ProjectNav />*/}
             <div id="project-wrapper">
                 <img src={projectArray.headerImg} id="project-header-img" />
                 <section id="project-intro">
@@ -96,24 +86,7 @@ const ProjectInfo = () => {
                     <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
                     <a href={projectArray.github}><button type="button">Github</button></a>
                 </nav>
-                {/*<Link to={"#project-info-page"} id="top-link">
-                    <div id="return-to-top">
-                        <p>^</p>
-                    </div>
-                </Link>*/}
-                <section id="contact-section">
-                    <button onClick={() => contactHide()}>Contact</button>
-                </section>
             </div>
-            { hideContact ? (
-                <div id="contact-hidden">
-                    <Contact />
-                </div>
-            ) : (
-                <div>
-                    <Contact />
-                </div>
-            ) }
         </main>
     )
 }

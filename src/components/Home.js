@@ -52,9 +52,6 @@ const Home = () => {
                         </div>
                     </article>
                 </section>
-                <section>
-                    <Contact />
-                </section>
             </div>
         </main>
     )

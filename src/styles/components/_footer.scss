@@ -1,0 +1,16 @@
+#footer-bar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: white;
+    bottom: 0px;
+    display: flex;
+
+    section {
+        margin: auto;
+
+        p:hover, :focus{
+            cursor: pointer;
+        }
+    }
+}
