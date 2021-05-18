@@ -37,10 +37,21 @@
     }
 }
 
+#landing-wrapper {
+    #contact-article {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
 @media (min-width: 920px) {
+
+    #landing-wrapper #contact-article {
+        max-width: $max-width-desktop;
+    }
+
     #contact-article {
         width: 700px;
-        margin-left: 20px;
 
         ul {
             display: flex;

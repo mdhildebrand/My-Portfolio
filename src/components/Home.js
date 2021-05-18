@@ -21,6 +21,7 @@ const Home = () => {
                 <svg class="section-div" viewbox="0 0 400 10">
                     <polygon points="200,0 400,5 200,10 0,5" />
                 </svg>
+
                 <ProjectList />
                 <svg class="section-div" viewbox="0 0 400 10">
                     <polygon points="200,0 400,5 200,10 0,5" />
@@ -30,6 +31,8 @@ const Home = () => {
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
                         {about[0].aboutText.split('\n').map((str, i) => <p key={i}>{str}</p>)}
+                    </article>
+                    <article id="skills-article">
                         <h2>{about[0].skillsHeader}</h2>
                         <div id="about-skills">
                             <ul>

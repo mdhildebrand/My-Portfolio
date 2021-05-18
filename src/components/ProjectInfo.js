@@ -15,6 +15,9 @@ const ProjectInfo = () => {
 
     const contactHide = () => {
         setHideContact(!hideContact);
+        if(!hideContact) {
+            //window.scrollTo(0, document.body.scrollHeight)
+        }
     }
 
     useEffect (() => {

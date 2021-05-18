@@ -7,23 +7,27 @@
         width: 100%;
         max-width: 400px;
         align-self: center;
+        display: block;
+        margin: auto;
     }
 
     h2 {
         margin-top: 30px;
     }
 
-    #about-article {
-        max-width: 550px;
-        padding: 1rem;
+    article {
+        max-width: 500px;
+        margin: auto;
+        //padding: 1rem;
     }
 
     #about-skills {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin-top: 20px;
 
         ul {
-            margin: 10px 50px 0px 10px;
+            margin: 0px 50px 0px 10px;
             padding: 0px;
 
 
@@ -34,22 +38,39 @@
     }
 }
 
-@media (min-width: 920px) {
-
-    #about-article {
-        text-justify: center;
-        margin: auto;
-        margin-left: 10px;
-        padding: 10px;
-        max-width: 400px;
+@media (min-width: 290px) {
+    #about-section #about-skills {
+        flex-direction: row;
     }
+}
 
-    #about-section {
-        min-height: 700px;
-        padding-top: 0;
-        display: flex;
-        flex-direction: row-reverse;
+@media (min-width: 920px) {    
+
+    #landing-wrapper #about-section {
+        min-height: 100vh;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 450px 250px;
+        direction: rtl;
+
+        article {
+            direction: ltr;
+        }
     
+        #about-article {
+            text-justify: center;
+            margin: auto;
+            margin-left: 10px;
+            padding: 10px;
+            grid-column: 2;
+            grid-row: 1/3;
+        }
+
+        #skills-article {
+            margin: 0px auto;
+        }
+
         img {
             width: 60vw;
             max-width: 400px;

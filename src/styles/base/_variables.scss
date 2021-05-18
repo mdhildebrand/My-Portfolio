@@ -7,6 +7,9 @@ $gradient-background: linear-gradient(180deg, $color-bg-blue 0%, $color-bg-pink 
 $color-font-black: #000000;
 $color-font-white: #ffffff;
 
+$color-main: #DCBFE9;
+$color-secondary: #B7E4D8;
+
 // Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Sanchez&display=swap');
@@ -14,3 +17,7 @@ $color-font-white: #ffffff;
 $font-header: 'Sora', sans-serif;
 $font-subheader: 'Sanchez', serif;
 $font-body: 'Roboto', sans-serif;
+
+// Sizes
+
+$max-width-desktop: 1000px;

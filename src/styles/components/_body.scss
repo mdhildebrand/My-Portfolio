@@ -29,10 +29,10 @@ svg {
 .section-div {
     height: 10px;
     width: 400px;
-    fill: lavender;
+    fill: $color-main;
     position: relative;
     margin: auto;
-    display: block;
+    display: none;
 }
 
 #landing-wrapper {
@@ -94,7 +94,7 @@ svg {
 
 }
 
-@media (min-width: 820px) {
+@media (min-width: 860px) {
 
     #welcome-article {
         text-justify: center;
@@ -105,8 +105,7 @@ svg {
         }
     }
 
-    #welcome-section {
-        padding-top: 0;
+    #landing-wrapper #welcome-section {
         display: flex;
         flex-direction: row-reverse;
     
@@ -115,5 +114,10 @@ svg {
             max-width: 400px;
             object-fit: contain;
         }
+    }
+
+    #landing-wrapper section {
+        max-width: $max-width-desktop;
+        margin: 1rem auto;
     }
 }
