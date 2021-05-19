@@ -25,7 +25,7 @@ h4 {
     margin: 0px;
 }
 
-p, button, a, li {
+p, button, li {
     font-family: $font-body;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -33,4 +33,6 @@ p, button, a, li {
 
 a {
     color: black;
+    font-family: $font-body;
+    font-size: 1.2rem;
 }

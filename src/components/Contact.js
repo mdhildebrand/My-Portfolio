@@ -11,9 +11,7 @@ const Contact = () => {
 
     const contactHide = () => {
         setHideContact(!hideContact);
-        if(!hideContact) {
-            //window.scrollTo(0, document.body.scrollHeight)
-        }
+        console.log("hide");
     }
 
     return (
@@ -21,25 +19,25 @@ const Contact = () => {
             <p onClick={() => contactHide()}>Contact</p>
             { !hideContact && 
                 <div id="contact-background" onClick={() => contactHide()}>
-                    <article id="contact-article">
+                    <article id="contact-article" onClick={(e) => e.stopPropagation()}>
                         <h1>{about[0].contactHeader}</h1>
                         <p>{about[0].contactText}</p>
                         <a href="mailto:hildebrand.matt@gmail.com">hildebrand.matt@gmail.com</a>
                         <ul id="contact-links">
                             <li>
-                                <a href="https://www.linkedin.com/in/matt-hildebrand-a75584204/">
+                                <a href="https://www.linkedin.com/in/matt-hildebrand-a75584204/" target="_blank">
                                     <LogoLinkedin />
                                     <p>Linkedin</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/hildebrandmatt">
+                                <a href="https://github.com/hildebrandmatt" target="_blank">
                                     <LogoGithub />
                                     <p>Github</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://codepen.io/hildebrandmatt">
+                                <a href="https://codepen.io/hildebrandmatt" target="_blank">
                                     <LogoCodepen />
                                     <p>Codepen</p>
                                 </a>

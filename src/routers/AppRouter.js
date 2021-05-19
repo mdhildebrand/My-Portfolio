@@ -11,13 +11,13 @@ const AppRouter = () => (
 
 	<Router>
 		<div className="wrapper">
-			<Header />
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/project/:id'}><ProjectInfo /></Route>
 				<Route path={'/testpage'}><TestPage /></Route>
 				<Route path={'/*'}><PageNotFound /></Route>
 			</Switch>
+			<Header />
 			<Footer />
 		</div>
 	</Router>	

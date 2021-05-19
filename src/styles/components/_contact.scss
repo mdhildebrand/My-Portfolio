@@ -14,8 +14,9 @@
 #contact-article {
     background-color: white;
     margin: auto;
-    pointer-events: unset;
+    //pointer-events: none;
     padding: 30px;
+    z-index: 300;
 
     ul {
         padding: 0px;

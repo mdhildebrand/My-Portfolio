@@ -18,12 +18,12 @@ const Home = () => {
                         <p>{about[0].intro}</p>
                     </article>
                 </section>
-                <svg class="section-div" viewbox="0 0 400 10">
+                <svg className="section-div" viewBox="0 0 400 10">
                     <polygon points="200,0 400,5 200,10 0,5" />
                 </svg>
 
                 <ProjectList />
-                <svg class="section-div" viewbox="0 0 400 10">
+                <svg className="section-div" viewBox="0 0 400 10">
                     <polygon points="200,0 400,5 200,10 0,5" />
                 </svg>
                 <section id="about-section">

@@ -5,12 +5,26 @@
     background: white;
     bottom: 0px;
     display: flex;
+    justify-content: space-around;
 
-    section {
-        margin: auto;
+    p:first-child:hover, :focus {
+        cursor: pointer;
+    }
 
-        p:hover, :focus{
-            cursor: pointer;
-        }
+    p:first-child:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 0.13em;
+        left: 50%;
+        position: absolute;
+        background: #000;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    p:first-child:hover:after {
+        width: 100%;
+        left: 0%;
     }
 }
