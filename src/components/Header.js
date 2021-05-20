@@ -10,17 +10,19 @@ const Header = () => {
             document.getElementById("nav-home").classList.remove("current")
             document.getElementById("nav-works").classList.remove("current")
             document.getElementById("nav-about").classList.remove("current")
-            let scrolled = document.scrollingElement.scrollTop;
-            let homePos = document.getElementById("welcome-section").clientHeight - 120
-            let workPos = homePos + document.getElementById("projects-section").clientHeight
-            if ( scrolled < homePos ) {
-                setScrollPos("nav-home")
-            } else if (scrolled < workPos ) {
-                setScrollPos("nav-works")
-            } else {
-                setScrollPos("nav-about")
+            if( window.location.pathname == '/' ) {
+                let scrolled = document.scrollingElement.scrollTop;
+                let homePos = document.getElementById("welcome-section").clientHeight - 120
+                let workPos = homePos + document.getElementById("projects-section").clientHeight
+                if ( scrolled < homePos ) {
+                    setScrollPos("nav-home")
+                } else if (scrolled < workPos ) {
+                    setScrollPos("nav-works")
+                } else {
+                    setScrollPos("nav-about")
+                }
+                document.getElementById(scrollPos).classList.add("current")
             }
-            document.getElementById(scrollPos).classList.add("current")
         }
         document.addEventListener("scroll", checkScroll)
         checkScroll()
