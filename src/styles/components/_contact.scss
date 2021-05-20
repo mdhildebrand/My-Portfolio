@@ -48,6 +48,33 @@
     }
 }
 
+#close-contact-button {
+    position: absolute;
+    background: white;
+    //border: solid 3px black;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+
+    span {
+        width: 34px;
+        height: 3px;
+        background: black;
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 26px;
+        transform: rotate(-45deg);
+    }
+
+    span:first-child {
+        transform: rotate(45deg);
+    }
+}
+
 #landing-wrapper {
     #contact-article {
         max-width: 500px;

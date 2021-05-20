@@ -21,6 +21,10 @@ const Contact = () => {
                 <div id="contact-background" onClick={() => contactHide()}>
                     <article id="contact-article" onClick={(e) => e.stopPropagation()}>
                         <h1>{about[0].contactHeader}</h1>
+                        <div id="close-contact-button" onClick={() => contactHide()}>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <p>{about[0].contactText}</p>
                         <a href="mailto:hildebrand.matt@gmail.com">hildebrand.matt@gmail.com</a>
                         <ul id="contact-links">
