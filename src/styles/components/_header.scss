@@ -6,12 +6,21 @@
     top: 0px;
     display: flex;
     justify-content: space-around;
+    //max-width: $max-width-desktop;
 
     a {
         height: 3.2rem;
         p {
             width: 60px;
             text-align: center;
+            display: none;
+        }
+        svg {
+            margin: auto;
+            display: block;
+            position: relative;
+            height: 38px;
+            margin: 8px auto;
         }
     }
 
@@ -35,5 +44,17 @@
     a.current:after {
         width: 140%;
         left: -20%;
+    }
+}
+
+@media (min-width: 400px) {
+    #header-bar a {
+        p {
+            display: block;
+        }
+
+        svg {
+            display: none;
+        }
     }
 }

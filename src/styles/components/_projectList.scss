@@ -1,6 +1,7 @@
 #landing-wrapper #projects-section {
 
     padding-top: 4rem;
+    background: $color-secondary;
 
     img {
         //width: 75vw;
@@ -11,14 +12,13 @@
                     0px 0px 0px 5px #222222;
         margin: 2rem auto;
         object-fit: scale-down;
-        width: 100%;
+        width: calc(100% + 2.0rem - 10px);
+        left: calc(-1.0rem + 5px);
         display: block;
     }
 
     .project-div {
         padding: 1.5rem 0;
-        background: $color-secondary;
-        border-radius: 1rem;
 
         a {
             margin: 1rem auto;
