@@ -15,8 +15,9 @@
     background-color: white;
     margin: auto;
     //pointer-events: none;
-    padding: 30px;
+    padding: 40px 10px;
     z-index: 300;
+    height: 100vh;
 
     ul {
         padding: 0px;
@@ -56,7 +57,7 @@
     width: 60px;
     border-radius: 30px;
     top: 40px;
-    right: 40px;
+    right: 0px;
     cursor: pointer;
 
     span {
@@ -82,14 +83,30 @@
     }
 }
 
-@media (min-width: 920px) {
+@media (min-width: 310px) {
+    #contact-article {
+        padding: 40px 30px;
+        height: auto;
+    }
+    #close-contact-button {
+        right: 40px;
+    }
+}
+
+@media (min-width: 500px) {
+    #contact-article {
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) {
 
     #contact-background {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
     #contact-article {
-        width: 800px;
+        width: 682px;
         margin: auto;
         padding: 60px;
         border: solid 3px black;

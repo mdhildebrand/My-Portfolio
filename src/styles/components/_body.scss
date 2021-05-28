@@ -41,6 +41,7 @@ svg {
         background: white;
         padding: 2.0rem 1.0rem;
     }
+    margin-bottom: 50px;
 }
 
 #welcome-section {
@@ -118,5 +119,11 @@ svg {
     #landing-wrapper section {
         max-width: $max-width-desktop;
         margin: 1rem auto;
+    }
+}
+
+@media (min-width: 920px) {
+    #landing-wrapper {
+        margin-bottom: 0px;
     }
 }
