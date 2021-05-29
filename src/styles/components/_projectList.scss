@@ -1,7 +1,6 @@
 #landing-wrapper #projects-section {
 
     padding-top: 4rem;
-    background: $color-secondary;
 
     img {
         //width: 75vw;
@@ -58,7 +57,7 @@
     #projects-section .project-div {
         display: flex;
         flex-direction: row;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
 
         a {
             margin: 0px 25px;
