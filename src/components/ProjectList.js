@@ -10,6 +10,8 @@ const ProjectList = () => {
             {projectList.map((project) => {
                 return (
                     <div className="project-div" key={project.id}>
+                        <div className="project-bg-div-one"></div>
+                        <div className="project-bg-div-two"></div>
                         <img src={project.screenshotURL} alt="Screenshot of the project" />
                         <article className="project-info">
                             <h2>{project.project}</h2>

@@ -2,7 +2,6 @@ import Nav from '../components/Nav';
 import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
-import backgroundWave from '../images/backgroundWave.png';
 import introImage from '../images/introImage.png';
 import aboutImage from '../images/introImage.png';
 
@@ -15,7 +14,7 @@ const Home = () => {
                     <div class="bubble-one" />
                     <div class="bubble-two" />
                     <div class="bubble-three" />
-                    <img src={introImage} alt="illustration of the developer" />
+                    {/*<img src={introImage} alt="illustration of the developer" />*/}
                     <article id="welcome-article">
                         <h1>{about[0].welcome}</h1>
                         <p>{about[0].intro}</p>
