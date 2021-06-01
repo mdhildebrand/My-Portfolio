@@ -2,7 +2,6 @@ import { projects } from '../data/projects';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import ProjectNav from '../components/ProjectNav';
-import Contact from '../components/Contact';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 const ProjectInfo = () => {   
@@ -16,7 +15,7 @@ const ProjectInfo = () => {
     
     return (
         <main id="project-info-page">
-            {/*<ProjectNav />*/}
+            <ProjectNav />
             <div id="project-wrapper">
                 <img src={projectArray.headerImg} id="project-header-img" />
                 <section id="project-intro">
