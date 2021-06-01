@@ -1,7 +1,7 @@
 #about-section {
-    min-height: 100vh;
+    min-height: calc(100vh - 2.0rem);
     padding-top: 60px;
-    padding-bottom: 40px;
+    //padding-bottom: 40px;
 
     img {
         width: 100%;

@@ -18,7 +18,7 @@ const AppRouter = () => (
 				<Route path={'/*'}><PageNotFound /></Route>
 			</Switch>
 			<Header />
-			<Footer />
+			{/*<Footer />*/}
 		</div>
 	</Router>	
 );

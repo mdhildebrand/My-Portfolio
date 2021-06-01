@@ -8,7 +8,23 @@
     left: 0;
     background-color: white;
     display: flex;
+    cursor: auto;
 
+}
+
+#contact-section {
+    height: 3.2rem;
+    #contact-link {
+        cursor: pointer;
+        display: none;
+    }  
+    .icon {
+        margin: auto;
+        display: block;
+        position: relative;
+        height: 38px;
+        margin: 8px auto;
+    }  
 }
 
 #contact-article {
@@ -90,6 +106,17 @@
     }
     #close-contact-button {
         right: 40px;
+    }
+}
+
+@media (min-width: 400px) {
+    #contact-section {
+        #contact-link {
+            display: block;
+        }
+        .icon {
+            display: none;
+        }
     }
 }
 
