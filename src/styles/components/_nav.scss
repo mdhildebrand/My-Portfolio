@@ -65,8 +65,8 @@
 #project-nav {
     position: fixed;
     top: 0px;
-    right: 30px;
-    opacity: 0.7;
+    right: 20px;
+    opacity: 0.5;
 
     ul {
         padding: 0;
@@ -79,28 +79,28 @@
         }
 
         li:nth-child(1) {
-            width: 40vh;
-            height: 40vh;
+            width: 60vh;
+            height: 60vh;
             position: absolute;
-            top: 60px;
+            top: -60px;
             background-color: $color-main;
             z-index: 5;
         }
 
         li:nth-child(2) {
-            width: 30vh;
-            height: 30vh;
+            width: 50vh;
+            height: 50vh;
             position: absolute;
-            top: calc(40vh + 30px);
+            top: calc(40vh);
             background-color: $color-secondary;
             z-index: 4;
         }
 
         li:nth-child(3) {
-            width: 20vh;
-            height: 20vh;
+            width: 30vh;
+            height: 30vh;
             position: absolute;
-            top: calc(70vh);
+            top: calc(80vh);
             background-color: $color-tertiary;
             z-index: 3;
         }

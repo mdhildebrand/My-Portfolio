@@ -7,8 +7,8 @@
         max-width: 500px;
         //position: relative;
         //x-offset y-ofset blur spread color
-        box-shadow: 0px 0px 0px 3px white,
-                    0px 0px 0px 5px $color-tertiary;
+        box-shadow: 0px 0px 0px 3px white/**/,
+                    0px 0px 0px 7px $color-tertiary/**/;
         margin: 2rem auto;
         object-fit: scale-down;
         width: calc(100% + 2.0rem - 10px);
@@ -19,24 +19,6 @@
     .project-div {
         padding: 1.5rem 0;
         position: relative;
-
-        .project-bg-div-two {
-            height: 78%;
-            width: 75%;
-            background-color: $color-main;
-            position: absolute;
-            top: 5%;
-            right: 5%;
-        }
-
-        .project-bg-div-one {
-            height: 50%;
-            width: 30%;
-            background-color: $color-secondary;
-            position: absolute;
-            left: 5%;
-            top: 50%;
-        }
 
         a {
             margin: 1rem auto;
@@ -50,28 +32,35 @@
             margin: auto;
             padding: 0 1rem;
             max-width: 432px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
-
-    button {
-        cursor: pointer;
-        margin: auto;
-    }
 }
 
-.button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.project-bg-div-two {
+    height: 78%;
+    width: 75%;
+    //background-color: $color-main;
+    border: solid 4px $color-main;
+    position: absolute;
+    top: 5%;
+    right: 5%;
 }
 
-@media(min-width: 380px) {
-    .button-container{
-        flex-direction: row;
-    }
+.project-bg-div-one {
+    height: 50%;
+    width: 30%;
+    //background-color: $color-secondary;
+    border: solid 4px $color-secondary;
+    position: absolute;
+    top: 50%;
+    right: 5%;
 }
 
-@media(min-width: 920px) {
+@media(min-width: 980px) {
 
     #projects-section .project-div {
         display: flex;
@@ -94,5 +83,19 @@
         margin-left: 0px;
         min-width: 300px;
         max-width: 400px;
+    }
+
+    .project-bg-div-two {
+        height: 66%;
+        width: 75%;
+        top: 5%;
+        right: 0%;
+    }
+
+    .project-bg-div-one {
+        height: 24%;
+        width: 40%;
+        top: 72%;
+        right: 55%;
     }
 }

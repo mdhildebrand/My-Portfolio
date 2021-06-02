@@ -1,0 +1,27 @@
+button {
+    cursor: pointer;
+    margin: auto;
+    background: white;
+    border: 2px solid black;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 16px;
+    margin: 10px 0px 10px 0px;
+}
+
+button:hover, :focus {
+    background: black;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media(min-width: 380px) {
+    .button-container{
+        flex-direction: row;
+    }
+}

@@ -38,6 +38,12 @@
     }
 }
 
+#about-frame {
+    border-bottom: 4px solid $color-secondary;
+    width: 70%;
+    margin: auto;
+}
+
 @media (min-width: 290px) {
     #about-section #about-skills {
         flex-direction: row;
@@ -47,7 +53,7 @@
 @media (min-width: 920px) {    
 
     #landing-wrapper #about-section {
-        min-height: 100vh;
+        min-height: 80vh;
         padding: 50px;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -78,4 +84,12 @@
         }
     }
 
+    #about-frame {
+        border-left: 4px solid $color-secondary;
+        width: 15rem;
+        height: 10rem;
+        bottom: 10rem;
+        left: -20px;
+        margin: 0;
+    }
 }
