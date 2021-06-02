@@ -33,7 +33,8 @@ const Home = () => {
                     <article id="about-article">
                         <h1>{about[0].aboutHeader}</h1>
                         {about[0].aboutText.split('\n').map((str, i) => <p key={i}>{str}</p>)}
-                        <div id="about-frame"></div>
+                        <div id="about-frame-top"></div>
+                        <div id="about-frame-bot"></div>
                     </article>
                     <article id="skills-article">
                         <h2>{about[0].skillsHeader}</h2>

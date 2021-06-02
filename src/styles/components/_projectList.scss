@@ -41,23 +41,11 @@
 }
 
 .project-bg-div-two {
-    height: 78%;
-    width: 75%;
-    //background-color: $color-main;
-    border: solid 4px $color-main;
     position: absolute;
-    top: 5%;
-    right: 5%;
 }
 
 .project-bg-div-one {
-    height: 50%;
-    width: 30%;
-    //background-color: $color-secondary;
-    border: solid 4px $color-secondary;
     position: absolute;
-    top: 50%;
-    right: 5%;
 }
 
 @media(min-width: 980px) {
@@ -86,6 +74,7 @@
     }
 
     .project-bg-div-two {
+        border: solid 4px $color-main;
         height: 66%;
         width: 75%;
         top: 5%;
@@ -93,6 +82,7 @@
     }
 
     .project-bg-div-one {
+        border: solid 4px $color-secondary;
         height: 24%;
         width: 40%;
         top: 72%;

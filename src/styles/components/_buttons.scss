@@ -2,16 +2,16 @@ button {
     cursor: pointer;
     margin: auto;
     background: white;
-    border: 2px solid black;
-    height: 2rem;
+    border: 3px solid $color-tertiary;
+    height: 2.1rem;
     width: 7rem;
-    border-radius: 16px;
-    margin: 10px 0px 10px 0px;
+    //border-radius: 16px;
+    margin: 5px 0px 5px 0px;
 }
 
 button:hover, :focus {
-    background: black;
-    color: white;
+    background: $color-main;
+    //color: white;
 }
 
 .button-container {
