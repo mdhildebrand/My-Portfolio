@@ -11,9 +11,9 @@ const Home = () => {
         <main>
             <div id="landing-wrapper">
                 <section id="welcome-section">
-                    <div class="bubble-one" />
-                    <div class="bubble-two" />
-                    <div class="bubble-three" />
+                    <div className="bubble-one" />
+                    <div className="bubble-two" />
+                    <div className="bubble-three" />
                     {/*<img src={introImage} alt="illustration of the developer" />*/}
                     <article id="welcome-article">
                         <h1>{about[0].welcome}</h1>

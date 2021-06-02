@@ -17,7 +17,7 @@ const ProjectList = () => {
                             <h2>{project.project}</h2>
                             <p>{project.landingDescription}</p>
                             <div className="button-container">
-                                <a href={project.liveSite}><button type="button">Live Site</button></a>
+                                <a href={project.liveSite} target="_blank"><button type="button">Live Site</button></a>
                                 <NavLink to={'/project/' + project.id}><button type="button">More Info</button></NavLink>
                             </div>
                         </article>

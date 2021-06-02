@@ -18,9 +18,9 @@ const ProjectNav = () => {
     return (
         <div id="project-nav">
             <ul>
-                <li style={{left: (-Math.cos(scrollPos * 0.007) * 40)}}></li>
-                <li style={{left: (Math.cos(scrollPos * 0.007) * 40)}}></li>
-                <li style={{left: (Math.sin(scrollPos * 0.007) * 40)}}></li>
+                <li style={{left: (-Math.cos(scrollPos * 0.004) * 40)}}></li>
+                <li style={{left: (Math.cos(scrollPos * 0.004) * 50)}}></li>
+                <li style={{left: (Math.sin(scrollPos * 0.004) * 60)}}></li>
             </ul>
         </div>
     )

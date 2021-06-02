@@ -82,8 +82,8 @@ const ProjectInfo = () => {
                     {projectArray.reflections.split('\n').map((str, i) => <p key={i}>{str}</p>)}
                 </section>
                 <nav id="project-links">
-                    <a href={projectArray.liveSite}><button type="button">Live Site</button></a>
-                    <a href={projectArray.github}><button type="button">Github</button></a>
+                    <a href={projectArray.liveSite} target="_blank"><button type="button">Live Site</button></a>
+                    <a href={projectArray.github} target="_blank"><button type="button">Github</button></a>
                 </nav>
             </div>
         </main>
