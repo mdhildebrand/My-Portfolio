@@ -17,7 +17,7 @@ const Home = () => {
                     {/*<img src={introImage} alt="illustration of the developer" />*/}
                     <article id="welcome-article">
                         <h1>{about[0].welcome}</h1>
-                        <p>{about[0].intro}</p>
+                        <p>{about[0].intro.split('\n').map((str, i) => <p key={i}>{str}</p>)}</p>
                     </article>
                 </section>
                 <svg className="section-div" viewBox="0 0 400 10">

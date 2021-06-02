@@ -42,14 +42,34 @@ svg {
 }
 
 #welcome-article {    
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        p {
+            margin: 0px;
+        }
+    }
 }
 
 #test-page {
     background: $gradient-background;
     height: 100vh;
     width: 100vw;
+}
+
+@media (min-width: 700px) {
+    #welcome-article {
+        h1{
+            font-size: 2.8rem;
+        }
+    }
 }
 
 @media (min-width: 860px) {
