@@ -33,7 +33,7 @@ const Header = () => {
     },[document.scrollingElement.scrollTop])
 
     return (
-        <div id="header-bar">
+        <header id="header-bar">
             <h1 id="header-name">Matt Hildebrand</h1>
             <nav>
                 <Link to={'/#welcome-section'} id="nav-home" className="current link-a">
@@ -65,7 +65,7 @@ const Header = () => {
                 </Link>
                 <Contact />
             </nav>
-        </div>
+        </header>
     )
 }
 

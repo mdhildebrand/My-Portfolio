@@ -5,20 +5,18 @@ import ProjectInfo from '../components/ProjectInfo';
 import PageNotFound from '../components/PageNotFound';
 import TestPage from '../components/TestPage';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const AppRouter = () => (
 
 	<Router>
 		<div className="wrapper">
+		<Header />
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/project/:id'}><ProjectInfo /></Route>
 				<Route path={'/testpage'}><TestPage /></Route>
 				<Route path={'/*'}><PageNotFound /></Route>
 			</Switch>
-			<Header />
-			{/*<Footer />*/}
 		</div>
 	</Router>	
 );

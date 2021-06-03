@@ -1,10 +1,11 @@
-#header-bar {
+header {
     position: fixed;
     width: 100%;
     background: white;
     top: 0px;
     display: flex;
     flex-direction: column;
+    z-index: 20;
     #header-name {
         margin: auto;
         margin-top: 5px;
