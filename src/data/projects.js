@@ -28,7 +28,7 @@ export const projects = {
         briefDescription: "Wedding photographry site built in WordPress",
         landingDescription: "A custom-built WordPress site collaboratively designed to showcase the work of a wedding photographer, and advertise their services.",
         liveSite: "https://mdhildebrand.com/lilywoods/",
-        github: "https://github.com/htpwebdesign/lily-woods",
+        github: "https://github.com/hildebrandmatt/lily-woods",
         code: ["WordPress", "PHP", "SASS"],
         tools: ["InVision", "Photoshop", "Github"],
         description: "Lily Woods Photography is a custom-built WordPress site developed for a fictional wedding photographer to show off their photos, and advertise their services. It was designed and developed from the ground up along with two other teammates.",
