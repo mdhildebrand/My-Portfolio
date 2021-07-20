@@ -45,7 +45,7 @@ const Header = () => {
                         <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                     </svg>
                 </Link>
-                <Link to="/#projects-section" id="nav-works" className=" link-a">
+                <Link to={'/#projects-section'} id="nav-works" className=" link-a">
                     <p>Work</p>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-files" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -54,7 +54,7 @@ const Header = () => {
                         <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
                     </svg>
                 </Link>
-                <Link to="/#about-section" id="nav-about" className=" link-a">
+                <Link to={'/#about-section'} id="nav-about" className=" link-a">
                     <p>About</p>
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-info-circle" width="44" height="44" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

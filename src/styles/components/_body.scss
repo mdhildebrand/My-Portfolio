@@ -9,7 +9,7 @@ svg {
 
 .wrapper {
     width: 100%;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .section-div {
@@ -42,7 +42,7 @@ svg {
 }
 
 #welcome-article {    
-    max-width: 500px;
+    max-width: 480px;
     margin: auto;
 
     h1 {
@@ -64,42 +64,7 @@ svg {
     width: 100vw;
 }
 
-@media (min-width: 700px) {
-    #welcome-article {
-        h1{
-            font-size: 2.8rem;
-        }
-    }
-}
-
-@media (min-width: 860px) {
-
-    #welcome-article {
-        text-justify: center;
-        padding: 10px;
-
-        p {
-            margin-top: 40px;
-        }
-    }
-
-    #landing-wrapper #welcome-section {
-        //flex-direction: row-reverse;
-    
-        /*img {
-            width: 60vw;
-            max-width: 400px;
-            object-fit: contain;
-        }*/
-    }
-
-    #landing-wrapper section {
-        max-width: $max-width-desktop;
-        margin: 1rem auto;
-    }
-}
-
-@media (min-width: 520px) {
+@media (min-width: 560px) {
     #landing-wrapper {
         margin-bottom: 0px;
         #welcome-section {
@@ -123,5 +88,39 @@ svg {
                 border-color: $color-main;
             }
         }
+    }
+}
+
+@media (min-width: 700px) {
+    #welcome-article {
+        h1{
+            font-size: 2.8rem;
+        }
+    }
+}
+
+@media (min-width: 860px) {
+
+    #welcome-article {
+        padding: 10px;
+
+        p {
+            margin-top: 40px;
+        }
+    }
+
+    /*#landing-wrapper #welcome-section {
+        flex-direction: row-reverse;
+    
+        img {
+            width: 60vw;
+            max-width: 400px;
+            object-fit: contain;
+        }
+    }*/
+
+    #landing-wrapper section {
+        max-width: $max-width-desktop;
+        margin: 1rem auto;
     }
 }
