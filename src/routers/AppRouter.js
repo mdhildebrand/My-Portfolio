@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from '../components/Home';
 import ProjectInfo from '../components/ProjectInfo';
-import PageNotFound from '../components/PageNotFound';
+//import PageNotFound from '../components/PageNotFound';
 import TestPage from '../components/TestPage';
 import Header from '../components/Header';
 
@@ -15,7 +15,7 @@ const AppRouter = () => (
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/project/:id'}><ProjectInfo /></Route>
 				<Route path={'/testpage'}><TestPage /></Route>
-				<Route path={'/*'}><PageNotFound /></Route>
+				{/*<Route path={'/*'}><PageNotFound /></Route>*/}
 			</Switch>
 		</div>
 	</Router>	

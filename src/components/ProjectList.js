@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
 
 const ProjectList = () => {
@@ -18,7 +18,7 @@ const ProjectList = () => {
                             <p>{project.landingDescription}</p>
                             <div className="button-container">
                                 <a href={project.liveSite} target="_blank"><button type="button">Live Site</button></a>
-                                <NavLink to={'/project/' + project.id}><button type="button">More Info</button></NavLink>
+                                <Link to={'/project/' + project.id}><button type="button">More Info</button></Link>
                             </div>
                         </article>
                     </div>

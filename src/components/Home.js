@@ -1,8 +1,8 @@
-import Nav from '../components/Nav';
-import Contact from '../components/Contact';
+//import Nav from '../components/Nav';
+//import Contact from '../components/Contact';
 import ProjectList from '../components/ProjectList';
 import { about } from '../data/about';
-import introImage from '../images/introImage.png';
+//import introImage from '../images/introImage.png';
 import aboutImage from '../images/introImage.png';
 
 const Home = () => {    
