@@ -61,7 +61,7 @@
 @media (min-width: 920px) {    
 
     #landing-wrapper #about-section {
-        min-height: 80vh;
+        min-height: calc(100vh - 50px);
         padding: 50px;
         display: grid;
         grid-template-columns: 50% 50%;

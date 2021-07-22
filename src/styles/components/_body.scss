@@ -64,7 +64,7 @@ svg {
     width: 100vw;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 580px) {
     #landing-wrapper {
         margin-bottom: 0px;
         #welcome-section {
@@ -102,11 +102,7 @@ svg {
 @media (min-width: 860px) {
 
     #welcome-article {
-        padding: 10px;
-
-        p {
-            margin-top: 40px;
-        }
+        padding: 15px 0px;
     }
 
     /*#landing-wrapper #welcome-section {
