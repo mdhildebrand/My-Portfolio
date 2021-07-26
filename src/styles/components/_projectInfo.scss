@@ -167,6 +167,20 @@
         }
     }
 
+    #project-highlight {
+        .img-wrapper {
+            width: 100%;
+            margin-left: 0px;
+            height: 450px;
+            object-fit: cover;
+            overflow-y: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     #project-wrapper #code-and-tools ul {
         margin: 0px 40px 0px 0px;
     }

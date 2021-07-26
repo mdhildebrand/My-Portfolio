@@ -76,6 +76,20 @@ const ProjectInfo = () => {
                         </SRLWrapper>
                     }
                 </section>
+                { projectArray.highlight &&
+                    <section id="project-highlight">
+                        <article>
+                            <h3>Highlight</h3>
+                            <span></span>
+                            {projectArray.highlight.split('\n').map((str, i) => <p key={i}>{str}</p>)}
+                        </article>
+                        <SRLWrapper>
+                            <div class="img-wrapper">
+                                <img src={projectArray.highlightImage} />
+                            </div>
+                        </SRLWrapper>
+                    </section>
+                }
                 <section id="project-reflections">
                     <h3>Reflections</h3>
                     <span></span>
